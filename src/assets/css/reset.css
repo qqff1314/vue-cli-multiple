@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-family:微软雅黑;
+    box-sizing: border-box;
+    /*transition: all .3s;*/
+  }
+
+  *:focus {
+    outline: none;
+  }
+
+  *, *:before, *:after {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  em{
+    font-style: normal;
+  }
+  ol, ul, li {
+
+    padding: 0;
+    margin: 0;
+    display: block;
+
+  }
+
+  u, i {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+
+  }
+
+  fieldset, img {
+    border: 0;
+
+  }
+
+  html {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+    position: relative;
+    font-size: 13px;
+    background-color: #f4f6f9;
+    overflow-x: auto;
+    min-height: 100%;
+  }
+  body,html{
+    height: 100%;
+  }
+  input, select, textarea {
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 0;
+    background: none;
+  }
+
+  a {
+    color:#000;
+    text-decoration: none;
+  }
+
+  a:link {
+
+    text-decoration: none;
+  }
+
+  a:visited {
+
+    text-decoration: none;
+  }
+
+  .f-cb{
+    zoom: 1;
+  }
+
+  .f-cb:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+  }
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+  .text-ovh{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .text-break{
+    word-break:break-all;
+  }
+  .bg-cover{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bg-contain{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #app{
+    height: 100%;
+  }
+[v-cloak]{
+  display: none
+}
+
+
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-enter-active{
+  animation: .3s fade-in;
+}
+.fade-leave-active{
+  animation: .3s fade-out;
+}
