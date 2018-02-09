@@ -47,6 +47,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
+          publicPath:'/remark/html/shop/',//正式目录
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
         }
       },
@@ -59,7 +60,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        test: /\.(woff2?|eot|ttf|ttc|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
           limit: 10000,
